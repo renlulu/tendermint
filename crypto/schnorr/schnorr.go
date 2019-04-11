@@ -1,7 +1,6 @@
 package schnorr
 
 import (
-	"encoding/hex"
 	"errors"
 	"fmt"
 	"github.com/btcsuite/btcd/btcec"
@@ -97,6 +96,5 @@ func Verify(publicKey []byte, msg []byte, r []byte, s []byte) bool {
 
 	rn := new(big.Int).SetBytes(r)
 	_rn := new(big.Int).SetBytes(_r)
-	fmt.Printf("r = %s, _r = %s\n", hex.EncodeToString(r), hex.EncodeToString(_r))
 	return rn.Cmp(_rn) == 0
 }
