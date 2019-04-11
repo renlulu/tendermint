@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	"github.com/tendermint/tendermint/p2p/conn"
+	"github.com/renlulu/tendermint/config"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/renlulu/tendermint/p2p/conn"
 )
 
 const (

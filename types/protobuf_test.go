@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	amino "github.com/tendermint/go-amino"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	"github.com/tendermint/tendermint/version"
+	abci "github.com/renlulu/tendermint/abci/types"
+	"github.com/renlulu/tendermint/crypto"
+	"github.com/renlulu/tendermint/crypto/ed25519"
+	"github.com/renlulu/tendermint/crypto/secp256k1"
+	"github.com/renlulu/tendermint/version"
 )
 
 func TestABCIPubKey(t *testing.T) {
@@ -130,7 +130,7 @@ func TestABCIHeader(t *testing.T) {
 	// assert the encodings match
 	// NOTE: they don't yet because Amino encodes
 	// int64 as zig-zag and we're using non-zigzag in the protobuf.
-	// See https://github.com/tendermint/tendermint/issues/2682
+	// See https://github.com/renlulu/tendermint/issues/2682
 	_, _ = headerBz, pbHeaderBz
 	// assert.EqualValues(t, headerBz, pbHeaderBz)
 

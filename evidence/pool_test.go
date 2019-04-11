@@ -7,10 +7,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	dbm "github.com/tendermint/tendermint/libs/db"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	sm "github.com/renlulu/tendermint/state"
+	"github.com/renlulu/tendermint/types"
+	tmtime "github.com/renlulu/tendermint/types/time"
 )
 
 func TestMain(m *testing.M) {

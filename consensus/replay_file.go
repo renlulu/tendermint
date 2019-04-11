@@ -11,14 +11,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	bc "github.com/tendermint/tendermint/blockchain"
-	cfg "github.com/tendermint/tendermint/config"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	bc "github.com/renlulu/tendermint/blockchain"
+	cfg "github.com/renlulu/tendermint/config"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/proxy"
+	sm "github.com/renlulu/tendermint/state"
+	"github.com/renlulu/tendermint/types"
 )
 
 const (

@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/types"
+	"github.com/renlulu/tendermint/crypto"
+	"github.com/renlulu/tendermint/privval"
+	"github.com/renlulu/tendermint/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/renlulu/tendermint/crypto/ed25519"
+	"github.com/renlulu/tendermint/libs/log"
 )
 
 const (

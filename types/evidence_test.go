@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/renlulu/tendermint/crypto/secp256k1"
+	"github.com/renlulu/tendermint/crypto/tmhash"
 )
 
 type voteData struct {

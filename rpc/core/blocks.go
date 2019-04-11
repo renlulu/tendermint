@@ -3,11 +3,11 @@ package core
 import (
 	"fmt"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/lib/types"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	ctypes "github.com/renlulu/tendermint/rpc/core/types"
+	rpctypes "github.com/renlulu/tendermint/rpc/lib/types"
+	sm "github.com/renlulu/tendermint/state"
+	"github.com/renlulu/tendermint/types"
 )
 
 // Get block headers for minHeight <= height <= maxHeight.

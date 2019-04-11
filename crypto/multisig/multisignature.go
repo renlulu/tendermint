@@ -3,8 +3,8 @@ package multisig
 import (
 	"errors"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/multisig/bitarray"
+	"github.com/renlulu/tendermint/crypto"
+	"github.com/renlulu/tendermint/crypto/multisig/bitarray"
 )
 
 // Multisignature is used to represent the signature object used in the multisigs.

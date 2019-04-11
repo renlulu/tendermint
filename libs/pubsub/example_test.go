@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 
-	"github.com/tendermint/tendermint/libs/pubsub"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/renlulu/tendermint/libs/pubsub"
+	"github.com/renlulu/tendermint/libs/pubsub/query"
 )
 
 func TestExample(t *testing.T) {

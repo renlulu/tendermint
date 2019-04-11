@@ -7,10 +7,10 @@ import (
 
 	amino "github.com/tendermint/go-amino"
 
-	clist "github.com/tendermint/tendermint/libs/clist"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	clist "github.com/renlulu/tendermint/libs/clist"
+	"github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/p2p"
+	"github.com/renlulu/tendermint/types"
 )
 
 const (

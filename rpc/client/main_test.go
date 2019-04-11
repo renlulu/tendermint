@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	nm "github.com/tendermint/tendermint/node"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/renlulu/tendermint/abci/example/kvstore"
+	nm "github.com/renlulu/tendermint/node"
+	rpctest "github.com/renlulu/tendermint/rpc/test"
 )
 
 var node *nm.Node

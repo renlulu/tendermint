@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/fail"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/renlulu/tendermint/abci/types"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/fail"
+	"github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/proxy"
+	"github.com/renlulu/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

@@ -1,9 +1,9 @@
 package state
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/renlulu/tendermint/abci/types"
+	"github.com/renlulu/tendermint/mempool"
+	"github.com/renlulu/tendermint/types"
 )
 
 //------------------------------------------------------

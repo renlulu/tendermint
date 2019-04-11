@@ -3,10 +3,10 @@ package state
 import (
 	"fmt"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/renlulu/tendermint/abci/types"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/types"
 )
 
 //------------------------------------------------------------------------

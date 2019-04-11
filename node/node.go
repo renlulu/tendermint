@@ -17,32 +17,32 @@ import (
 	"github.com/rs/cors"
 
 	amino "github.com/tendermint/go-amino"
-	abci "github.com/tendermint/tendermint/abci/types"
-	bc "github.com/tendermint/tendermint/blockchain"
-	cfg "github.com/tendermint/tendermint/config"
-	cs "github.com/tendermint/tendermint/consensus"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/evidence"
-	cmn "github.com/tendermint/tendermint/libs/common"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/log"
-	tmpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	mempl "github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/pex"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	rpccore "github.com/tendermint/tendermint/rpc/core"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	grpccore "github.com/tendermint/tendermint/rpc/grpc"
-	rpcserver "github.com/tendermint/tendermint/rpc/lib/server"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/state/txindex/kv"
-	"github.com/tendermint/tendermint/state/txindex/null"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
-	"github.com/tendermint/tendermint/version"
+	abci "github.com/renlulu/tendermint/abci/types"
+	bc "github.com/renlulu/tendermint/blockchain"
+	cfg "github.com/renlulu/tendermint/config"
+	cs "github.com/renlulu/tendermint/consensus"
+	"github.com/renlulu/tendermint/crypto/ed25519"
+	"github.com/renlulu/tendermint/evidence"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/log"
+	tmpubsub "github.com/renlulu/tendermint/libs/pubsub"
+	mempl "github.com/renlulu/tendermint/mempool"
+	"github.com/renlulu/tendermint/p2p"
+	"github.com/renlulu/tendermint/p2p/pex"
+	"github.com/renlulu/tendermint/privval"
+	"github.com/renlulu/tendermint/proxy"
+	rpccore "github.com/renlulu/tendermint/rpc/core"
+	ctypes "github.com/renlulu/tendermint/rpc/core/types"
+	grpccore "github.com/renlulu/tendermint/rpc/grpc"
+	rpcserver "github.com/renlulu/tendermint/rpc/lib/server"
+	sm "github.com/renlulu/tendermint/state"
+	"github.com/renlulu/tendermint/state/txindex"
+	"github.com/renlulu/tendermint/state/txindex/kv"
+	"github.com/renlulu/tendermint/state/txindex/null"
+	"github.com/renlulu/tendermint/types"
+	tmtime "github.com/renlulu/tendermint/types/time"
+	"github.com/renlulu/tendermint/version"
 )
 
 //------------------------------------------------------------------------------
@@ -693,7 +693,7 @@ func (n *Node) startRPC() ([]net.Listener, error) {
 		config.MaxOpenConnections = n.config.RPC.MaxOpenConnections
 		// If necessary adjust global WriteTimeout to ensure it's greater than
 		// TimeoutBroadcastTxCommit.
-		// See https://github.com/tendermint/tendermint/issues/3435
+		// See https://github.com/renlulu/tendermint/issues/3435
 		if config.WriteTimeout <= n.config.RPC.TimeoutBroadcastTxCommit {
 			config.WriteTimeout = n.config.RPC.TimeoutBroadcastTxCommit + 1*time.Second
 		}

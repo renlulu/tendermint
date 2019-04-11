@@ -23,9 +23,9 @@ implementation.
 import (
 	"context"
 
-	cmn "github.com/tendermint/tendermint/libs/common"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	cmn "github.com/renlulu/tendermint/libs/common"
+	ctypes "github.com/renlulu/tendermint/rpc/core/types"
+	"github.com/renlulu/tendermint/types"
 )
 
 // ABCIClient groups together the functionality that principally

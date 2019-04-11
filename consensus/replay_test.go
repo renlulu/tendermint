@@ -15,17 +15,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/renlulu/tendermint/abci/example/kvstore"
+	abci "github.com/renlulu/tendermint/abci/types"
+	cfg "github.com/renlulu/tendermint/config"
+	"github.com/renlulu/tendermint/crypto"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/privval"
+	"github.com/renlulu/tendermint/proxy"
+	sm "github.com/renlulu/tendermint/state"
+	"github.com/renlulu/tendermint/types"
+	"github.com/renlulu/tendermint/version"
 )
 
 func TestMain(m *testing.M) {

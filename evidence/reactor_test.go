@@ -9,12 +9,12 @@ import (
 	"github.com/go-kit/kit/log/term"
 	"github.com/stretchr/testify/assert"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	dbm "github.com/tendermint/tendermint/libs/db"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/renlulu/tendermint/config"
+	"github.com/renlulu/tendermint/crypto/secp256k1"
+	dbm "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/p2p"
+	"github.com/renlulu/tendermint/types"
 )
 
 // evidenceLogger is a TestingLogger which uses a different
