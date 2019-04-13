@@ -16,7 +16,6 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/rs/cors"
 
-	amino "github.com/tendermint/go-amino"
 	abci "github.com/renlulu/tendermint/abci/types"
 	bc "github.com/renlulu/tendermint/blockchain"
 	cfg "github.com/renlulu/tendermint/config"
@@ -43,6 +42,7 @@ import (
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
 	"github.com/renlulu/tendermint/version"
+	"github.com/tendermint/go-amino"
 )
 
 //------------------------------------------------------------------------------

@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	cfg "github.com/renlulu/tendermint/config"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/libs/db"
 	dbm "github.com/renlulu/tendermint/libs/db"
 	"github.com/renlulu/tendermint/libs/log"
 	sm "github.com/renlulu/tendermint/state"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
