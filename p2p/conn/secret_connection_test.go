@@ -15,10 +15,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 type kvstoreConn struct {

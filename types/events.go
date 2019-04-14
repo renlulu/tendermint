@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	amino "github.com/tendermint/go-amino"
 	abci "github.com/renlulu/tendermint/abci/types"
 	tmpubsub "github.com/renlulu/tendermint/libs/pubsub"
 	tmquery "github.com/renlulu/tendermint/libs/pubsub/query"
+	"github.com/tendermint/go-amino"
 )
 
 // Reserved event types (alphabetically sorted).

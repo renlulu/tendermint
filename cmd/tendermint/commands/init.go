@@ -3,13 +3,13 @@ package commands
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
 	cfg "github.com/renlulu/tendermint/config"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/p2p"
 	"github.com/renlulu/tendermint/privval"
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
+	"github.com/spf13/cobra"
 )
 
 // InitFilesCmd initialises a fresh Tendermint Core instance.

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	amino "github.com/tendermint/go-amino"
+	"github.com/tendermint/go-amino"
 	"golang.org/x/crypto/ed25519"
 
 	"github.com/renlulu/tendermint/crypto"

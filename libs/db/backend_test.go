@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
+	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	cmn "github.com/renlulu/tendermint/libs/common"
 )
 
 func cleanupDBDir(dir, name string) {

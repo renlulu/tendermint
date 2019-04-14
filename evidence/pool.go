@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	clist "github.com/renlulu/tendermint/libs/clist"
+	"github.com/renlulu/tendermint/libs/clist"
 	dbm "github.com/renlulu/tendermint/libs/db"
 	"github.com/renlulu/tendermint/libs/log"
 

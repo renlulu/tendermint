@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	monitor "github.com/renlulu/tendermint/tools/tm-monitor/monitor"
+	"github.com/renlulu/tendermint/tools/tm-monitor/monitor"
 	tmtypes "github.com/renlulu/tendermint/types"
 )
 

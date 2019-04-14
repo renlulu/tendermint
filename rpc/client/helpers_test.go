@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	"github.com/renlulu/tendermint/rpc/client"
 	"github.com/renlulu/tendermint/rpc/client/mock"
 	ctypes "github.com/renlulu/tendermint/rpc/core/types"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func TestWaitForHeight(t *testing.T) {

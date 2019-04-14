@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLoadOrGenNodeKey(t *testing.T) {

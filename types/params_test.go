@@ -5,8 +5,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	abci "github.com/renlulu/tendermint/abci/types"
+	"github.com/stretchr/testify/assert"
 )
 
 var (

@@ -8,7 +8,6 @@ import (
 
 	"github.com/pkg/errors"
 
-	amino "github.com/tendermint/go-amino"
 	cstypes "github.com/renlulu/tendermint/consensus/types"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	tmevents "github.com/renlulu/tendermint/libs/events"
@@ -17,6 +16,7 @@ import (
 	sm "github.com/renlulu/tendermint/state"
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
+	"github.com/tendermint/go-amino"
 )
 
 const (
@@ -896,7 +896,7 @@ type PeerState struct {
 	peer   p2p.Peer
 	logger log.Logger
 
-	mtx   sync.Mutex             // NOTE: Modify below using setters, never directly.
+	mtx   sync.Mutex                                  // NOTE: Modify below using setters, never directly.
 	PRS   cstypes.PeerRoundState `json:"round_state"` // Exposed.
 	Stats *peerStateStats        `json:"stats"`       // Exposed.
 }

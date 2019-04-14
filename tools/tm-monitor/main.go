@@ -8,7 +8,7 @@ import (
 
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/libs/log"
-	monitor "github.com/renlulu/tendermint/tools/tm-monitor/monitor"
+	"github.com/renlulu/tendermint/tools/tm-monitor/monitor"
 )
 
 var logger = log.NewNopLogger()

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	log "github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 	lerr "github.com/renlulu/tendermint/lite/errors"
 	"github.com/renlulu/tendermint/types"
 )

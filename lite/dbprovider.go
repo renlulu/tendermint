@@ -5,12 +5,12 @@ import (
 	"regexp"
 	"strconv"
 
-	amino "github.com/tendermint/go-amino"
 	cryptoAmino "github.com/renlulu/tendermint/crypto/encoding/amino"
 	dbm "github.com/renlulu/tendermint/libs/db"
-	log "github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 	lerr "github.com/renlulu/tendermint/lite/errors"
 	"github.com/renlulu/tendermint/types"
+	"github.com/tendermint/go-amino"
 )
 
 var _ PersistentProvider = (*DBProvider)(nil)

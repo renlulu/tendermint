@@ -37,7 +37,6 @@ type socketClient struct {
 	err     error
 	reqSent *list.List                            // list of requests sent, waiting for response
 	resCb   func(*types.Request, *types.Response) // called on all requests, if set.
-
 }
 
 func NewSocketClient(addr string, mustConnect bool) *socketClient {

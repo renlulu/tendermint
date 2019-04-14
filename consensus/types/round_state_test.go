@@ -3,11 +3,11 @@ package types
 import (
 	"testing"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
+	"github.com/tendermint/go-amino"
 )
 
 func BenchmarkRoundStateDeepCopy(b *testing.B) {

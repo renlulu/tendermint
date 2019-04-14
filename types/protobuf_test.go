@@ -7,12 +7,12 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 
-	amino "github.com/tendermint/go-amino"
 	abci "github.com/renlulu/tendermint/abci/types"
 	"github.com/renlulu/tendermint/crypto"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	"github.com/renlulu/tendermint/crypto/secp256k1"
 	"github.com/renlulu/tendermint/version"
+	"github.com/tendermint/go-amino"
 )
 
 func TestABCIPubKey(t *testing.T) {

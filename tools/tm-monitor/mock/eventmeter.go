@@ -4,9 +4,9 @@ import (
 	stdlog "log"
 	"reflect"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/libs/log"
 	em "github.com/renlulu/tendermint/tools/tm-monitor/eventmeter"
+	"github.com/tendermint/go-amino"
 )
 
 type EventMeter struct {

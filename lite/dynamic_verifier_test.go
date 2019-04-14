@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	dbm "github.com/renlulu/tendermint/libs/db"
-	log "github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 	"github.com/renlulu/tendermint/types"
 )
 

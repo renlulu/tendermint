@@ -197,10 +197,10 @@ type ResultABCIQuery struct {
 // empty results
 type (
 	ResultUnsafeFlushMempool struct{}
-	ResultUnsafeProfile      struct{}
-	ResultSubscribe          struct{}
-	ResultUnsubscribe        struct{}
-	ResultHealth             struct{}
+	ResultUnsafeProfile struct{}
+	ResultSubscribe struct{}
+	ResultUnsubscribe struct{}
+	ResultHealth struct{}
 )
 
 // Event data from a subscription

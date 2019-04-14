@@ -8,7 +8,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	metrics "github.com/rcrowley/go-metrics"
+	"github.com/rcrowley/go-metrics"
 	tmrpc "github.com/renlulu/tendermint/rpc/client"
 	"github.com/renlulu/tendermint/types"
 )

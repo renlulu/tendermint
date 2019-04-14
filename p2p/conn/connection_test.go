@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/tendermint/go-amino"
 )
 
 const maxPingPongPacketSize = 1024 // bytes

@@ -277,7 +277,7 @@ func randPubKey() crypto.PubKey {
 func randValidator_(totalVotingPower int64) *Validator {
 	// this modulo limits the ProposerPriority/VotingPower to stay in the
 	// bounds of MaxTotalVotingPower minus the already existing voting power:
-	val := NewValidator(randPubKey(), int64(cmn.RandUint64()%uint64((MaxTotalVotingPower-totalVotingPower))))
+	val := NewValidator(randPubKey(), int64(cmn.RandUint64()%uint64((MaxTotalVotingPower - totalVotingPower))))
 	val.ProposerPriority = cmn.RandInt64() % (MaxTotalVotingPower - totalVotingPower)
 	return val
 }
@@ -480,14 +480,14 @@ func TestAveragingInIncrementProposerPriorityWithVotingPower(t *testing.T) {
 			[]int64{
 				0 + 10*vp0 - 8*total, // after 10 iters this is mostest again
 				0 + 10*vp1 - total,   // after 6 iters this val is "mostest" once and not in between
-				0 + 10*vp2 - total},  // in between 10 iters this val is "mostest" once
+				0 + 10*vp2 - total}, // in between 10 iters this val is "mostest" once
 			10,
 			vals.Validators[0]},
 		10: {
 			vals.Copy(),
 			[]int64{
 				0 + 11*vp0 - 9*total,
-				0 + 11*vp1 - total,  // after 6 iters this val is "mostest" once and not in between
+				0 + 11*vp1 - total, // after 6 iters this val is "mostest" once and not in between
 				0 + 11*vp2 - total}, // after 10 iters this val is "mostest" once
 			11,
 			vals.Validators[0]},

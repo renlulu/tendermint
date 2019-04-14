@@ -5,7 +5,7 @@ import (
 	"context"
 	"log"
 
-	grpcdb "github.com/renlulu/tendermint/libs/db/remotedb/grpcdb"
+	"github.com/renlulu/tendermint/libs/db/remotedb/grpcdb"
 	protodb "github.com/renlulu/tendermint/libs/db/remotedb/proto"
 )
 

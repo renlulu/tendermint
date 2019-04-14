@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/renlulu/tendermint/crypto/tmhash"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/renlulu/tendermint/crypto/tmhash"
 )
 
 var testProposal *Proposal

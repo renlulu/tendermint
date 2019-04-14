@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	metrics "github.com/rcrowley/go-metrics"
+	"github.com/rcrowley/go-metrics"
 	tmtypes "github.com/renlulu/tendermint/types"
 )
 

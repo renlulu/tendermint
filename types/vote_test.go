@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/crypto"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	"github.com/renlulu/tendermint/crypto/tmhash"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"github.com/tendermint/go-amino"
 )
 
 func examplePrevote() *Vote {
@@ -90,7 +90,7 @@ func TestVoteSignBytesTestVectors(t *testing.T) {
 				0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, // height
 				0x19,                                   // (field_number << 3) | wire_type
 				0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, // round
-				0x2a, // (field_number << 3) | wire_type
+				0x2a,                                   // (field_number << 3) | wire_type
 				// remaining fields (timestamp):
 				0xb, 0x8, 0x80, 0x92, 0xb8, 0xc3, 0x98, 0xfe, 0xff, 0xff, 0xff, 0x1},
 		},
@@ -105,7 +105,7 @@ func TestVoteSignBytesTestVectors(t *testing.T) {
 				0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, // height
 				0x19,                                   // (field_number << 3) | wire_type
 				0x1, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, // round
-				0x2a, // (field_number << 3) | wire_type
+				0x2a,                                   // (field_number << 3) | wire_type
 				// remaining fields (timestamp):
 				0xb, 0x8, 0x80, 0x92, 0xb8, 0xc3, 0x98, 0xfe, 0xff, 0xff, 0xff, 0x1},
 		},
@@ -133,7 +133,7 @@ func TestVoteSignBytesTestVectors(t *testing.T) {
 				// remaining fields:
 				0x2a,                                                                // (field_number << 3) | wire_type
 				0xb, 0x8, 0x80, 0x92, 0xb8, 0xc3, 0x98, 0xfe, 0xff, 0xff, 0xff, 0x1, // timestamp
-				0x32,                                                                               // (field_number << 3) | wire_type
+				0x32,                                                                // (field_number << 3) | wire_type
 				0xd, 0x74, 0x65, 0x73, 0x74, 0x5f, 0x63, 0x68, 0x61, 0x69, 0x6e, 0x5f, 0x69, 0x64}, // chainID
 		},
 	}

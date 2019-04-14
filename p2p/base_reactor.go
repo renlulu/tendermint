@@ -34,7 +34,7 @@ type Reactor interface {
 
 type BaseReactor struct {
 	cmn.BaseService // Provides Start, Stop, .Quit
-	Switch          *Switch
+	Switch *Switch
 }
 
 func NewBaseReactor(name string, impl Reactor) *BaseReactor {

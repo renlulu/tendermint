@@ -4,10 +4,10 @@ package common
 
 import (
 	"bytes"
-	fmt "fmt"
+	"fmt"
 	"io/ioutil"
 	"os"
-	testing "testing"
+	"testing"
 
 	"github.com/stretchr/testify/require"
 )

@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	amino "github.com/tendermint/go-amino"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/tendermint/go-amino"
 
 	client "github.com/renlulu/tendermint/rpc/lib/client"
 	server "github.com/renlulu/tendermint/rpc/lib/server"

@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/renlulu/tendermint/crypto/tmhash"
 
-	amino "github.com/tendermint/go-amino"
+	"github.com/tendermint/go-amino"
 
 	"github.com/renlulu/tendermint/crypto"
 	"github.com/renlulu/tendermint/crypto/merkle"

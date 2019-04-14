@@ -8,7 +8,7 @@ package client
 import (
 	"fmt"
 
-	log "github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 	"github.com/renlulu/tendermint/lite"
 	lerr "github.com/renlulu/tendermint/lite/errors"
 	rpcclient "github.com/renlulu/tendermint/rpc/client"

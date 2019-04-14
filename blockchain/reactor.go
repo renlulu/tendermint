@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	amino "github.com/tendermint/go-amino"
+	"github.com/tendermint/go-amino"
 
 	"github.com/renlulu/tendermint/libs/log"
 	"github.com/renlulu/tendermint/p2p"

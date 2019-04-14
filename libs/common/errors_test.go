@@ -1,7 +1,7 @@
 package common
 
 import (
-	fmt "fmt"
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

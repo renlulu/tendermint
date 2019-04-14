@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	context "golang.org/x/net/context"
-	grpc "google.golang.org/grpc"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 
 	"github.com/renlulu/tendermint/abci/types"
 	cmn "github.com/renlulu/tendermint/libs/common"

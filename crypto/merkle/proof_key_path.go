@@ -54,7 +54,7 @@ type keyEncoding int
 const (
 	KeyEncodingURL keyEncoding = iota
 	KeyEncodingHex
-	KeyEncodingMax // Number of known encodings. Used for testing
+	KeyEncodingMax  // Number of known encodings. Used for testing
 )
 
 type Key struct {

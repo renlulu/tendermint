@@ -11,8 +11,7 @@ var (
 	secp256k1 = btcec.S256()
 )
 
-
-func Sign(privateKey, publicKey, msg []byte) ([]byte,[]byte) {
+func Sign(privateKey, publicKey, msg []byte) ([]byte, []byte) {
 	for {
 		k, err := GenerateDRN(msg)
 		if err != nil {

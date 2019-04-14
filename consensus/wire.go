@@ -1,8 +1,8 @@
 package consensus
 
 import (
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/types"
+	"github.com/tendermint/go-amino"
 )
 
 var cdc = amino.NewCodec()

@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	kitlog "github.com/go-kit/kit/log"
-	"github.com/stretchr/testify/assert"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestTMFmtLogger(t *testing.T) {

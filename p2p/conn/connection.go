@@ -12,10 +12,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	amino "github.com/tendermint/go-amino"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	flow "github.com/renlulu/tendermint/libs/flowrate"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/tendermint/go-amino"
 )
 
 const (
@@ -804,7 +804,7 @@ func (ch *Channel) writePacketMsgTo(w io.Writer) (n int64, err error) {
 // Not goroutine-safe
 func (ch *Channel) recvPacketMsg(packet PacketMsg) ([]byte, error) {
 	ch.Logger.Debug("Read PacketMsg", "conn", ch.conn, "packet", packet)
-	var recvCap, recvReceived = ch.desc.RecvMessageCapacity, len(ch.recving) + len(packet.Bytes)
+	var recvCap, recvReceived = ch.desc.RecvMessageCapacity, len(ch.recving)+len(packet.Bytes)
 	if recvCap < recvReceived {
 		return nil, fmt.Errorf("Received message exceeds available capacity: %v < %v", recvCap, recvReceived)
 	}

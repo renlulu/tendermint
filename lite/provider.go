@@ -8,7 +8,6 @@ import (
 // Provider provides information for the lite client to sync validators.
 // Examples: MemProvider, files.Provider, client.Provider, CacheProvider.
 type Provider interface {
-
 	// LatestFullCommit returns the latest commit with minHeight <= height <=
 	// maxHeight.
 	// If maxHeight is zero, returns the latest where minHeight <= height.

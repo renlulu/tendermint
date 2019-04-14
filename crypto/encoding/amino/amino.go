@@ -3,11 +3,11 @@ package cryptoAmino
 import (
 	"reflect"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/crypto"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	"github.com/renlulu/tendermint/crypto/multisig"
 	"github.com/renlulu/tendermint/crypto/secp256k1"
+	"github.com/tendermint/go-amino"
 )
 
 var cdc = amino.NewCodec()

@@ -1,7 +1,7 @@
 package types // nolint: goimports
 
 import (
-	context "golang.org/x/net/context"
+	"golang.org/x/net/context"
 )
 
 // Application is an interface that enables any finite, deterministic state machine

@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/stretchr/testify/assert"
 	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMarshalJSON(t *testing.T) {

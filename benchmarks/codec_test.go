@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	amino "github.com/tendermint/go-amino"
+	"github.com/tendermint/go-amino"
 
 	proto "github.com/renlulu/tendermint/benchmarks/proto"
 	"github.com/renlulu/tendermint/crypto/ed25519"

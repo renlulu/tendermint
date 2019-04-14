@@ -6,13 +6,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	ctypes "github.com/renlulu/tendermint/rpc/core/types"
 	em "github.com/renlulu/tendermint/tools/tm-monitor/eventmeter"
-	mock "github.com/renlulu/tendermint/tools/tm-monitor/mock"
-	monitor "github.com/renlulu/tendermint/tools/tm-monitor/monitor"
+	"github.com/renlulu/tendermint/tools/tm-monitor/mock"
+	"github.com/renlulu/tendermint/tools/tm-monitor/monitor"
 	tmtypes "github.com/renlulu/tendermint/types"
+	"github.com/tendermint/go-amino"
 )
 
 const (

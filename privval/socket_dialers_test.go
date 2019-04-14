@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/assert"
 	"github.com/renlulu/tendermint/crypto/ed25519"
 	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestIsConnTimeoutForFundamentalTimeouts(t *testing.T) {

@@ -1,8 +1,8 @@
 package monitor
 
 import (
-	amino "github.com/tendermint/go-amino"
 	ctypes "github.com/renlulu/tendermint/rpc/core/types"
+	"github.com/tendermint/go-amino"
 )
 
 var cdc = amino.NewCodec()

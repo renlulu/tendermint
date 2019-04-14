@@ -56,7 +56,6 @@ func hash(Q []byte, pubKey []byte, msg []byte) []byte {
 	return Sha256(buffer.Bytes())
 }
 
-
 func GenerateDRN(nonce []byte) ([]byte, error) {
 	var buffer bytes.Buffer
 	buffer.Write(generateRandomBytes(32))

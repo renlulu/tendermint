@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/stretchr/testify/require"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/stretchr/testify/require"
 
 	types "github.com/renlulu/tendermint/rpc/lib/types"
 )

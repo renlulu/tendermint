@@ -6,11 +6,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 	abci "github.com/renlulu/tendermint/abci/types"
 	cmn "github.com/renlulu/tendermint/libs/common"
-	db "github.com/renlulu/tendermint/libs/db"
+	"github.com/renlulu/tendermint/libs/db"
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 
 	"github.com/renlulu/tendermint/libs/pubsub/query"
 	"github.com/renlulu/tendermint/state/txindex"

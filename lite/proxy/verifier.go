@@ -3,7 +3,7 @@ package proxy
 import (
 	cmn "github.com/renlulu/tendermint/libs/common"
 	dbm "github.com/renlulu/tendermint/libs/db"
-	log "github.com/renlulu/tendermint/libs/log"
+	"github.com/renlulu/tendermint/libs/log"
 	"github.com/renlulu/tendermint/lite"
 	lclient "github.com/renlulu/tendermint/lite/client"
 )

@@ -751,5 +751,5 @@ func stringOrHexToBytes(s string) ([]byte, error) {
 		return nil, err
 	}
 
-	return []byte(s[1 : len(s)-1]), nil
+	return []byte(s[1:len(s)-1]), nil
 }

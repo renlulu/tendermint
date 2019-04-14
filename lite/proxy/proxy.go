@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/libs/log"
+	"github.com/tendermint/go-amino"
 
 	rpcclient "github.com/renlulu/tendermint/rpc/client"
 	"github.com/renlulu/tendermint/rpc/core"

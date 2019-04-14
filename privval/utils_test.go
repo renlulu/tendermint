@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	cmn "github.com/renlulu/tendermint/libs/common"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestIsConnTimeoutForNonTimeoutErrors(t *testing.T) {

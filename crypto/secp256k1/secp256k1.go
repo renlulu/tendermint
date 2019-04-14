@@ -12,7 +12,7 @@ import (
 
 	secp256k1 "github.com/btcsuite/btcd/btcec"
 
-	amino "github.com/tendermint/go-amino"
+	"github.com/tendermint/go-amino"
 
 	"github.com/renlulu/tendermint/crypto"
 )

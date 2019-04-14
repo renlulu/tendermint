@@ -11,11 +11,11 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/pkg/errors"
-	metrics "github.com/rcrowley/go-metrics"
+	"github.com/rcrowley/go-metrics"
 
-	amino "github.com/tendermint/go-amino"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	types "github.com/renlulu/tendermint/rpc/lib/types"
+	"github.com/tendermint/go-amino"
 )
 
 const (

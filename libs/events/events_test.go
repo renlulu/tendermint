@@ -252,7 +252,7 @@ func TestAddAndRemoveListener(t *testing.T) {
 	eventSum1 := <-doneSum1
 	eventSum2 := <-doneSum2
 	if checkSumEvent1 != eventSum1 ||
-		// correct value asserted by preceding tests, suffices to be non-zero
+	// correct value asserted by preceding tests, suffices to be non-zero
 		checkSumEvent2 == uint64(0) ||
 		eventSum2 != uint64(0) {
 		t.Errorf("Not all messages sent were received or unsubscription did not register.\n")

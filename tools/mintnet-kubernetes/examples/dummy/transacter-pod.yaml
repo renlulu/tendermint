@@ -8,12 +8,12 @@ spec:
     - name: transacter
       image: tendermint/transacter
       command:
-      - bash
-      - "-c"
-      - |
-        set -ex
-        while true
-        do
-          ./transact 100 "tm-0.dummy:26657"
-          sleep 1
-        done
+        - bash
+        - "-c"
+        - |
+          set -ex
+          while true
+          do
+            ./transact 100 "tm-0.dummy:26657"
+            sleep 1
+          done

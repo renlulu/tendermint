@@ -10,12 +10,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	amino "github.com/tendermint/go-amino"
 	auto "github.com/renlulu/tendermint/libs/autofile"
 	cmn "github.com/renlulu/tendermint/libs/common"
 	"github.com/renlulu/tendermint/libs/log"
 	"github.com/renlulu/tendermint/types"
 	tmtime "github.com/renlulu/tendermint/types/time"
+	"github.com/tendermint/go-amino"
 )
 
 const (

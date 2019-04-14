@@ -7,7 +7,7 @@ import (
 
 	"github.com/renlulu/tendermint/libs/log"
 	rpc "github.com/renlulu/tendermint/rpc/lib/server"
-	monitor "github.com/renlulu/tendermint/tools/tm-monitor/monitor"
+	"github.com/renlulu/tendermint/tools/tm-monitor/monitor"
 )
 
 func startRPC(listenAddr string, m *monitor.Monitor, logger log.Logger) net.Listener {

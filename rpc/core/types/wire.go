@@ -1,8 +1,8 @@
 package core_types
 
 import (
-	amino "github.com/tendermint/go-amino"
 	"github.com/renlulu/tendermint/types"
+	"github.com/tendermint/go-amino"
 )
 
 func RegisterAmino(cdc *amino.Codec) {

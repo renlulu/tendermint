@@ -44,7 +44,6 @@ var (
 // Otherwise they are vulnerable to MITM.
 // (TODO(ismail): see also https://github.com/renlulu/tendermint/issues/3010)
 type SecretConnection struct {
-
 	// immutable
 	recvSecret *[aeadKeySize]byte
 	sendSecret *[aeadKeySize]byte

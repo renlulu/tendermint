@@ -109,8 +109,8 @@ jobs:
             export PATH="$GOBIN:$PATH"
             bash abci/tests/test_app/test.sh
 
-# if this test fails, fix it and update the docs at:
-# https://github.com/renlulu/tendermint/blob/develop/docs/abci-cli.md
+  # if this test fails, fix it and update the docs at:
+  # https://github.com/renlulu/tendermint/blob/develop/docs/abci-cli.md
   test_abci_cli:
     <<: *defaults
     steps:
@@ -180,24 +180,24 @@ jobs:
           command: bash test/persist/test_failure_indices.sh
 
   localnet:
-      working_directory: /home/circleci/.go_workspace/src/github.com/renlulu/tendermint
-      machine:
-        image: circleci/classic:latest
-      environment:
-        GOBIN: /home/circleci/.go_workspace/bin
-        GOPATH: /home/circleci/.go_workspace/
-        GOOS: linux
-        GOARCH: amd64
-      parallelism: 1
-      steps:
-        - checkout
-        - run:
-            name: run localnet and exit on failure
-            command: |
-              set -x
-              docker run --rm -v "$PWD":/go/src/github.com/renlulu/tendermint -w /go/src/github.com/renlulu/tendermint golang make build-linux
-              make localnet-start &
-              ./scripts/localnet-blocks-test.sh 40 5 10 localhost
+    working_directory: /home/circleci/.go_workspace/src/github.com/renlulu/tendermint
+    machine:
+      image: circleci/classic:latest
+    environment:
+      GOBIN: /home/circleci/.go_workspace/bin
+      GOPATH: /home/circleci/.go_workspace/
+      GOOS: linux
+      GOARCH: amd64
+    parallelism: 1
+    steps:
+      - checkout
+      - run:
+          name: run localnet and exit on failure
+          command: |
+            set -x
+            docker run --rm -v "$PWD":/go/src/github.com/renlulu/tendermint -w /go/src/github.com/renlulu/tendermint golang make build-linux
+            make localnet-start &
+            ./scripts/localnet-blocks-test.sh 40 5 10 localhost
 
   test_p2p:
     environment:
